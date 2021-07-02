@@ -22,3 +22,19 @@ cout<<"\nIngrese valores de la matriz2:\n";
 
 
 }
+void mostrar(float (*m1)[5],float (*m2)[5]){
+	cout<<"\nElementos de la matriz 1 : \n";
+for(int i=0;i<5;i++){
+	for(int j=0;j<5;j++){
+	      cout<<m1[i][j]<<" ";
+	}
+cout<<"\n";
+	}
+	cout<<"\nElementos de la matriz 2: \n";
+for(int i=0;i<5;i++){
+	for(int j=0;j<5;j++){
+	      cout<<m2[i][j]<<" ";
+	}
+cout<<"\n";
+	}
+}
