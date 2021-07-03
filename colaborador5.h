@@ -1,52 +1,66 @@
 void mediayvarianza(float (*m1)[5], float (*m2)[5])
 {
-float s=0,s2=0,v=0,a=0,a2=0,v2=0;
-cout<<"Determinar  cual de las 2 matrices tiene la mayor media y varianza";
-  cout<<"\nMedia de la matriz 1 :";
-for(int i=0;i<5;i++){
+float a,a1,v1,c,me1,a2,a3,c1,v2,me2;
+	a=0;
+	a1=0;
+	c=0;
+	a2=0;
+	a3=0;
+	c1=0;
+	
+	cout<<"Determinar  cual de las 2 matrices tiene la mayor media y varianza\n";
+	
+	for(int i=0;i<5;i++){
 	for(int j=0;j<5;j++){
-		s+=m1[i][j]/25;
-		//cout<<s;
+	     
+	     a += *(*(m1+j)+i);
+	     c += 1;
 	}
-}
-	cout<<s<<endl;
-cout<<"\nMedia de la matriz 2 :";
-for(int i=0;i<5;i++){
+	}
+	me1=a/c;
+	cout<<"La media de la primera matriz es "<<me1<<endl;
+	
+	for(int i=0;i<5;i++){
 	for(int j=0;j<5;j++){
-		s2+=m2[i][j]/25;
-		//cout<<s;
+	     
+	     a1 += (*(*(m1+j)+i)-me1)*(*(*(m1+j)+i)-me1);
 	}
-}
-cout<<s2<<endl;
-for(int i=0;i<5;i++){
+	}
+	v1=a1/c;
+	cout<<"La varianza de la primera matriz es "<<v1<<endl;
+	
+	for(int i=0;i<5;i++){
 	for(int j=0;j<5;j++){
-		a+= m1[i][j]-s * m1[i][j]-s;
-		
+	      
+	     a2 += *(*(m2+j)+i);
+	     c1 += 1;
 	}
-}
-v=a/25;
-cout<<" La varianza de la primera matriz es:  "<<v<<endl;
-for(int i=0;i<5;i++){
+	}
+	me2=a2/c1;
+	cout<<"La media de la segunda matriz es "<<me2<<endl;
+	
+	for(int i=0;i<5;i++){
 	for(int j=0;j<5;j++){
-		a2+= m2[i][j]-s2 * m2[i][j]-s2;
-		
+	     
+	     a3 += (*(*(m2+j)+i)-me2)*(*(*(m2+j)+i)-me2);
 	}
-}
-v2=a2/25;
-cout<<" La varianza de la segunda matriz es:  "<<v2<<endl;	
-if (s>s2){
+	}
+	v2=a3/c1;
+	cout<<"La varianza de la segunda matriz es "<<v2<<endl;
+	if (me1>me2){
 	cout<<" La Primera matriz tiene mayor media   "<<endl;
 	}
 	else{
 		cout<<" La Segunda matriz tiene mayor media   "<<endl;
+		
 	}
-if (v>v2){
+if (v1>v2){
 	cout<<" La Primera matriz tiene mayor varianza  "<<endl;
 	}
 	else{
 		cout<<" La Segunda matriz tiene mayor varianza  "<<endl;
-	}
 		
+	}
 
 
 
