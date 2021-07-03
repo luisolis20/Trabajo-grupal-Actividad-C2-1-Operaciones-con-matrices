@@ -16,7 +16,7 @@ cout<<"\n";
 	}
 
 cout<<"Obetener el producto de las dos matrices ";
-/ Inicializamos la matriz r.
+// Inicializamos la matriz r.
     for(int i=0; i<5; ++i)
         for(int j=0; j<5; ++j)
             r[i][j] = 0;
