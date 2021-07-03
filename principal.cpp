@@ -40,13 +40,13 @@ int main()
 	cout<<"4.- Mostrar la transpuesta de la primera matriz \n";
 	cout<<"5.- Calcular la media y varianza y compararlas \n";
 	cout<<"0.- Salir del menu \n";
-        cout<<" Ingrese una opción : "; cin>>op;
+        cout<<" Ingrese una opciÃ³n : "; cin>>op;
 	switch(op){
 		case 1:
 	cout<<"ESTA FUNCION PERMITE INGRESAR EL VALOR A LAS MATRICES";
 		ingresar(matriz1,matriz2);
-		mostrar(matriz1);
-		mostrar(matriz2);
+		mostrar(matriz1,matriz2);
+		//mostrar(matriz2);
 		break;
 	        case 2:
 	// ESTA FUNCION PERMITE CALCULAR EL PRODUCTO ENTRE DOS MATRICES.
