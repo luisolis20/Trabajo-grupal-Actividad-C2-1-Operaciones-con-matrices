@@ -14,7 +14,7 @@ cout<<"\nElementos de la matriz1 Transpuesta : \n";
 for(int i=0;i<5;i++){
 	for(int j=0;j<5;j++){
 		r[j][i]=m1[j][i];
-	      cout<<r[j][i]<<" ";
+	      cout<<r[j][i]<<" | ";
 	}
 cout<<"\n";
 	}
