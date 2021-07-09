@@ -30,7 +30,7 @@ for(int i=0;i<5;i++){
 	}
 cout<<"\n";
 	}
-	cout<<"\nElementos de la matriz 2: \n";
+	cout<<"\nElementos de la Matriz 2: \n";
 for(int i=0;i<5;i++){
 	for(int j=0;j<5;j++){
 	      cout<<m2[i][j]<<" | ";
